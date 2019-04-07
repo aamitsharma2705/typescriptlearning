@@ -1,4 +1,8 @@
+import dotEnv = require("dotenv");
 import express = require("express");
+
+// # it automatically loads the environment variables defined in .env
+dotEnv.config();
 
 const app: express.Application = express();
 
