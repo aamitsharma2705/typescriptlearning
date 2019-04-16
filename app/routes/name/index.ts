@@ -1,4 +1,4 @@
-import express = require("express");
+import express from "express";
 function greetNamed(name: string): string {
     return `Hi! ${name}`;
 }

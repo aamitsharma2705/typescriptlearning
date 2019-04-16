@@ -1,5 +1,5 @@
-import dotEnv = require("dotenv");
-import express = require("express");
+import dotEnv from "dotenv";
+import express from "express";
 import routes from "./routes";
 // # it automatically loads the environment variables defined in .env
 dotEnv.config();
