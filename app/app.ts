@@ -1,14 +1,12 @@
 import dotEnv = require("dotenv");
 import express = require("express");
-
+import routes from "./routes";
 // # it automatically loads the environment variables defined in .env
 dotEnv.config();
 
 const app: express.Application = express();
 
-app.get("/", (req, res) => {
-    res.send("Hello World");
-});
+app.use("/", routes);
 
 app.listen(process.env.port, () => {
     // console.log(process.env)
